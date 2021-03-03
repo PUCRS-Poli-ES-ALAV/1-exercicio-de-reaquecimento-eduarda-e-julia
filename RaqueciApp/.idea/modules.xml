@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/target/classes/archetype-resources/src/main/main.iml" filepath="$PROJECT_DIR$/target/classes/archetype-resources/src/main/main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/main1.iml" filepath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/main1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/main/main2.iml" filepath="$PROJECT_DIR$/src/main/main2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/test/test.iml" filepath="$PROJECT_DIR$/src/test/test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/target/classes/archetype-resources/src/test/test1.iml" filepath="$PROJECT_DIR$/target/classes/archetype-resources/src/test/test1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/test2.iml" filepath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RaqueciApp.iml" filepath="$PROJECT_DIR$/.idea/RaqueciApp.iml" />
     </modules>
   </component>
 </project>
