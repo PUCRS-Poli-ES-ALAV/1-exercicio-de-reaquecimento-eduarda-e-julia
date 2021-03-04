@@ -3,7 +3,7 @@ package br.pucrs.alav;
 public class Recursion {
     public static void main(String [] args){
         System.out.println("Resultado E1, valores '4' e '6' = "+ multiplicaE1(4,6));
-        //E2
+        System.out.println("Resultado E2, valores '3' e '2' = " + somaE2(3,2));
         System.out.println("Resultado E3, valor '4' = "+ calculoE3(4));
         System.out.println("Resultado E4, palavra 'azul' = "+ inversaoE4("azul"));
         System.out.println("Resultado E5, valor '5' = "+ seqE5(5));
@@ -18,6 +18,13 @@ public class Recursion {
         else{
             return a + multiplicaE1(a, b - 1);
         }
+    }
+
+//   Soma de dois números naturais, através de incrementos sucessivos (Ex.: 3 + 2 = + + (+ + + 1)).
+    public static int somaE2 (int a, int b){
+        if(a == 0 && b == 0) return 0;
+        else if(a > 0) return somaE2(--a,b) + 1;
+        else return somaE2(a, --b) + 1;
     }
 
 //    Cálculo de 1 + 1/2 + 1/3 + 1/4 + ... + 1/N.
