@@ -9,6 +9,7 @@ public class Recursion {
         System.out.println("Resultado E5, valor '5' = "+ seqE5(5));
         System.out.println("Resultado E6, valores '3' e '2' = "+ ackermanE6(3,2));
         System.out.println("Resultado E7, valores '1','2' e '3' = "+ vetorE7Soma(new int[]{1,2,3},2));
+        System.out.println("Resultado E8, valore 'aba' : " + verificaPalindromo("aba"));
     }
 //    Multiplicação de dois números naturais, através de somas sucessivas (Ex.: 6 ∗ 4 = 4 + 4 + 4 + 4 + 4 + 4).
     public static int multiplicaE1(int a, int b){
@@ -62,5 +63,16 @@ public class Recursion {
     public static int vetorE7Soma(int [] vet,int n){
         if (n==0) return vet[0];
         return vet[n]+vetorE7Soma(vet,n-1);
+    }
+
+//  Verifique se uma palavra é palíndromo (Ex. aba, abcba, xyzzyx).
+    public static boolean verificaPalindromo(String palavra){
+        if(palavra.length() == 0 || palavra.length() == 1){
+            return true;
+        }
+        if(palavra.charAt(0) == palavra.charAt(palavra.length()-1)){
+            return verificaPalindromo(palavra.substring(1,palavra.length()- 1));
+        }
+        return false;
     }
 }
